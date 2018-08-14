@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let child = Child()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        child.bar()
+        child.foo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -19,5 +24,22 @@ class ViewController: UIViewController {
     }
 
 }
+
+protocol MyInterface {
+    func bar()
+    func foo()
+}
+
+class Child: MyInterface {
+    func bar() {
+        print("バー")
+    }
+    
+    func foo() {
+        print("ふー")
+    }
+}
+
+
 
 
