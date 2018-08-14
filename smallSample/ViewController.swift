@@ -9,17 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let animals:Array<aString> = [.dog, .cat, .turtle]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        for one in animals{
+            switch one {
+            case .dog:
+                print("犬か")
+            case .cat:
+                print("猫か")
+            default:
+                print("亀かもしれない")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
+}
 
+enum aString:String{
+    case dog = "犬"
+    case cat = "猫"
+    case turtle = "かめ"
 }
 
