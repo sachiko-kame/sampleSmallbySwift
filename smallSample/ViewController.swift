@@ -12,9 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let numText:String = "100"
-        print(Int(numText)!)
     }
 
     override func didReceiveMemoryWarning() {
