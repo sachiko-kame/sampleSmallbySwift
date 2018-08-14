@@ -9,9 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var sampleSring:String{
+        get{
+            return ""
+        }
+        set(text){
+            print("あてはめました！\(text)")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(sampleSring)
+        sampleSring = "カメ吉です"
+        print(sampleSring)
     }
 
     override func didReceiveMemoryWarning() {
