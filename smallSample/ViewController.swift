@@ -9,27 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let nameClass = NameClass(name: "カモメ")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameClass.NameText()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
 }
 
-
-class NameClass{
-    var name: String = ""
-    
-    init(name:String) {
-        self.name = name
-    }
-    
-    func NameText(){
-        print(self.name)
-    }
-}
