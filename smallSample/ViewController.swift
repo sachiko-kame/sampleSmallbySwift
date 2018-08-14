@@ -12,6 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let readWriteMap = ["foo":1, "bar":2]
+        print(readWriteMap["foo"])
+        
+        for (key, value) in readWriteMap {
+            print("\(key)と\(value)")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
